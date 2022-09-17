@@ -23,6 +23,7 @@ export const FirstSection = () => {
       const maxRelativeScroll = endHeight - startHeight;
       const relativePercentage = (relativeScroll * 100) / maxRelativeScroll;
 
+      if (relativePercentage < 0) return;
       setSTextOpacity(1 / (relativePercentage / 2));
 
       setScaleText(1 + relativePercentage / 5);

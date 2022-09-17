@@ -39,7 +39,7 @@ export const BottomWrapper = styled.div`
   right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 30px 30px;
+  padding: 0 30px 100px;
 `;
 export const BottomLeftWrapper = styled.div``;
 export const BottomRightWrapper = styled.div``;
