@@ -10,7 +10,7 @@ export const CheckIn = () => {
       </picture>
 
       <Text as="h3" size="1rem">
-        Ayudanos a organizarnos, Bilma te lo agradecerá infinito
+        Ayudanos a organizarnos rellenando el siguiente formulario, Bilma te lo agradecerá.
       </Text>
       <div
         style={{

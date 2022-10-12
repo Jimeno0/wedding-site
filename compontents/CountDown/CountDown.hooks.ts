@@ -1,56 +1,29 @@
 import { useEffect, useState } from 'react';
 
-export const useCountDown = () => {
-  const [countDownDiff, setCountDownDiff] = useState({
-    months: 0,
-    days: 0,
-    minutes: 0,
-    hours: 0,
-  });
+const useCountDown = () => {
+  const countDownDate = new Date(2023, 6, 15, 19, 0, 0, 0).getTime();
+
+  const [countDown, setCountDown] = useState(countDownDate - new Date().getTime());
+
   useEffect(() => {
-    const getTimeDiff = () => {
-      const weddingHour = 19;
-      const weddingDay = 15;
-      const weddingMonth = 7;
-      const now = new Date();
-      const minutes = 60 - now.getMinutes();
-      const monthDays = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+    const interval = setInterval(() => {
+      setCountDown(countDownDate - new Date().getTime());
+    }, 1000);
 
-      const getHours = () => {
-        let sustractinHours = minutes === 0 || minutes === 60 ? now.getHours() : now.getHours() + 1;
-        let diffHours = weddingHour - sustractinHours;
-        if (diffHours < 0) diffHours += 24;
-        return diffHours;
-      };
+    return () => clearInterval(interval);
+  }, [countDownDate]);
 
-      const hours = getHours();
-
-      const getDays = () => {
-        let sustractinDays = hours > 19 ? now.getDate() + 1 : now.getDate();
-        let diffDays = weddingDay - sustractinDays;
-        if (diffDays < 0) diffDays = weddingDay + (monthDays - sustractinDays);
-        return diffDays;
-      };
-
-      const days = getDays();
-
-      const getMonths = () => {
-        let sustractinMonths = days > 15 ? now.getMonth() + 2 : now.getMonth() + 1;
-        let diffMonths = weddingMonth - sustractinMonths;
-        if (diffMonths < 0) diffMonths = weddingMonth + (12 - sustractinMonths);
-        return diffMonths;
-      };
-      const months = getMonths();
-
-      return {
-        minutes,
-        hours,
-        days,
-        months,
-      };
-    };
-    const diff = getTimeDiff();
-    setCountDownDiff(diff);
-  }, []);
-  return countDownDiff;
+  return getReturnValues(countDown);
 };
+
+const getReturnValues = (countDown: number) => {
+  // calculate time left
+  const days = Math.floor(countDown / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
+
+  return { days, hours, minutes, seconds };
+};
+
+export { useCountDown };

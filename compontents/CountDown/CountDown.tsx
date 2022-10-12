@@ -4,19 +4,13 @@ import { Text } from '../Text';
 
 export const CountDown = () => {
   const countDownDiff = useCountDown();
-  const { months, days, hours, minutes } = countDownDiff;
+  const { days, hours, minutes, seconds } = countDownDiff;
   return (
     <CountDownWrapper>
       <Text color="white" size="1.2rem">
         Save the date!
       </Text>
       <CounterWrapper>
-        <DigitWrapper>
-          <Text color="white" size={'3em'}>
-            {months}
-          </Text>
-          <Text size="0.8rem">Meses</Text>
-        </DigitWrapper>
         <DigitWrapper>
           <Text color="white" size={'3em'}>
             {days}
@@ -34,6 +28,12 @@ export const CountDown = () => {
             {minutes}
           </Text>
           <Text size="0.8rem">Minutos</Text>
+        </DigitWrapper>
+        <DigitWrapper>
+          <Text color="white" size={'3em'}>
+            {seconds}
+          </Text>
+          <Text size="0.8rem">Segundos</Text>
         </DigitWrapper>
       </CounterWrapper>
       <a
