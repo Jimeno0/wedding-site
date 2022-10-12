@@ -1,5 +1,12 @@
 import { AppProps } from 'next/app';
 import { createGlobalStyle } from 'styled-components';
+import Head from 'next/head';
+
+const WEDDING_URL = 'https://www.perez-alejano.com/';
+const SITE_TITLE = 'Marta & Carlos';
+const SITE_DESCRIPTION = 'Bienvenidos a la web de nuestra boda!';
+const IMAGE_URL = 'https://www.perez-alejano.com/buceo.jpg';
+
 const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'CormorantGaramond';
@@ -37,6 +44,20 @@ const GlobalStyles = createGlobalStyle`
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <title>{SITE_TITLE}</title>
+        <link rel="icon" href="/favicon.png" />
+        <meta name="description" content={SITE_DESCRIPTION} />
+        <meta property="og:site_name" content={SITE_TITLE} />
+        <meta property="og:title" content={SITE_TITLE} />
+        <meta property="og:description" content={SITE_DESCRIPTION} />
+        <meta property="og:image" content={IMAGE_URL} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
+        <meta property="og:url" content={WEDDING_URL} />
+      </Head>
       <GlobalStyles />
       <Component {...pageProps} />
     </>
