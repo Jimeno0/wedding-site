@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SecondSectionWrapper = styled.section`
   display: flex;
   justify-content: center;
-  padding: 200px 50px 50px;
+  padding: 0px 50px 50px;
   position: relative;
   > p {
     position: absolute;

@@ -2,20 +2,28 @@ import styled from 'styled-components';
 export const CheckInWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 200px;
+  align-items: end;
+  margin-top: 90px;
+  padding-top: 50px;
+  padding-bottom: 40px;
   a {
-    margin-bottom: 10px;
+    color: black;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 15px 25px;
+    text-decoration: none;
   }
-  p {
-    margin-bottom: 50px;
+  h3 {
+    margin-bottom: 10px;
+    width: 80%;
+    margin-top: 15px;
   }
   picture {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
   img {
-    width: 70%;
+    width: 80%;
   }
 `;

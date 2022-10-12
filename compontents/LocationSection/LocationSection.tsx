@@ -4,34 +4,34 @@ import {
   BottomText,
   LinkWrapper,
 } from './LocationSection.styled';
-import { useInView } from 'react-intersection-observer';
 
 export const LocationSection = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
-  const { ref: subRef, inView: subtextInView } = useInView({
-    threshold: 0,
-  });
-
   return (
     <LocationSectionWrapper>
-      <div ref={ref} />
       <picture>
         <source srcSet="/finca.jpeg" type="image/webp" />
         <img src="/finca.jpeg" alt="fachada finca el gasto" width={'100%'} />
       </picture>
-      <SideText inView={inView} uppercase>
+      <SideText size="1.3rem" uppercase>
         Finca El gasco
       </SideText>
-      <div ref={subRef} />
-      <BottomText inView={subtextInView} size="0.9em">
+      <BottomText size="1em">
         Hay días en la vida que son especiales por sí solos, imagínate si lo vivimos juntos, ¡te
         esperamos!
       </BottomText>
       <LinkWrapper>
-        <a target="_blank" rel="noreferrer" href="https://g.page/fincaelgasco?share">
-          Ver en Mapas
+        <a
+          style={{
+            marginTop: '30px',
+            border: '1px solid black',
+            padding: '15px 25px',
+            textDecoration: 'none',
+          }}
+          target="_blank"
+          rel="noreferrer"
+          href="https://g.page/fincaelgasco?share"
+        >
+          Ver en mapas
         </a>
       </LinkWrapper>
     </LocationSectionWrapper>

@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react';
 import {
   Background,
   Wrapper,
-  AndPersand,
   BottomLeftWrapper,
   BottomRightWrapper,
   BottomWrapper,
+  AndPersandImage,
 } from './FirstSection.styled';
 import { Text } from '../Text';
+import { ArrowDown } from '../ArrowDown';
 
 export const FirstSection = () => {
   const [scaleText, setScaleText] = useState(1);
@@ -24,7 +25,7 @@ export const FirstSection = () => {
       const relativePercentage = (relativeScroll * 100) / maxRelativeScroll;
 
       if (relativePercentage < 0) return;
-      setSTextOpacity(1 / (relativePercentage / 2));
+      setSTextOpacity(1 / (relativePercentage / 3));
 
       setScaleText(1 + relativePercentage / 5);
     }
@@ -40,17 +41,13 @@ export const FirstSection = () => {
   return (
     <Wrapper>
       <Background>
-        <AndPersand
-          color="black"
-          size={'4rem'}
-          as="h2"
-          bold
-          center
+        <AndPersandImage
           textScale={scaleText}
           textOpacity={textOpacity}
-        >
-          {'&'}
-        </AndPersand>
+          width="200px"
+          alt="pedida"
+          src="/andpersand.png"
+        />
         <BottomWrapper>
           <BottomLeftWrapper>
             <Text uppercase color="black">
@@ -60,6 +57,7 @@ export const FirstSection = () => {
               15 Julio 2023
             </Text>
           </BottomLeftWrapper>
+          <ArrowDown />
           <BottomRightWrapper>
             <Text uppercase color="black">
               Madrid 19.00 H

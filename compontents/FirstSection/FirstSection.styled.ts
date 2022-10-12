@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-import { Text, TextProps } from '../Text';
+import { TextProps } from '../Text';
 
 type AttrsProps = { textScale: number; textOpacity: number };
-
-type Both = AttrsProps & TextProps;
 
 export const Wrapper = styled.div`
   position: relative;
@@ -21,7 +19,7 @@ export const Background = styled.div`
   overflow-y: hidden;
 `;
 
-export const AndPersand = styled(Text).attrs<AttrsProps>(({ textScale, textOpacity }) => ({
+export const AndPersandImage = styled.img.attrs<AttrsProps>(({ textScale, textOpacity }) => ({
   style: {
     transform: `translate(-50%, -50%) scale(${textScale})`,
     opacity: textOpacity,
@@ -39,7 +37,7 @@ export const BottomWrapper = styled.div`
   right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 30px 100px;
+  padding: 0 30px 120px;
 `;
 export const BottomLeftWrapper = styled.div``;
 export const BottomRightWrapper = styled.div``;
