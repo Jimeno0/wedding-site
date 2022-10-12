@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 const WEDDING_URL = 'https://www.perez-alejano.com/';
 const SITE_TITLE = 'Marta & Carlos';
-const SITE_DESCRIPTION = 'Bienvenidos a la web de nuestra boda!';
+const SITE_DESCRIPTION = 'Madrid, 15 de Julio de 2023';
 const IMAGE_URL = 'https://www.perez-alejano.com/buceo.jpg';
 
 const GlobalStyles = createGlobalStyle`
