@@ -30,7 +30,6 @@ export const CheckIn = () => {
       </div>
       <div
         style={{
-          backgroundColor: 'rgba(0,0,0,0.9)',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -38,7 +37,7 @@ export const CheckIn = () => {
           paddingTop: 30,
         }}
       >
-        <Text color="white">CC: ES6400495124642116438485</Text>
+        <Text>CC: ES6400495124642116438485</Text>
       </div>
     </CheckInWrapper>
   );
