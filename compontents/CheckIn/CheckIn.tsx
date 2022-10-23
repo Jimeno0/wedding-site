@@ -10,7 +10,7 @@ export const CheckIn = () => {
       </picture>
 
       <Text as="h3" size="1rem">
-        Ayudanos a organizarnos rellenando el siguiente formulario, Bilma te lo agradecerá.
+        Nos ayudas a organizarnos? En el siguiente formulario encontrarás todos los detalles.
       </Text>
       <div
         style={{
@@ -25,8 +25,20 @@ export const CheckIn = () => {
           rel="noreferrer"
           href="https://docs.google.com/forms/d/e/1FAIpQLSfQOre1e1r1mC1-j9KnVz0E2Gddh-b4F26-QfBekq-Kd2-MGA/viewform"
         >
-          Check in
+          Rellenar formulario
         </a>
+      </div>
+      <div
+        style={{
+          backgroundColor: 'rgba(0,0,0,0.9)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          width: '100%',
+          paddingTop: 30,
+        }}
+      >
+        <Text color="white">CC: ES6400495124642116438485</Text>
       </div>
     </CheckInWrapper>
   );

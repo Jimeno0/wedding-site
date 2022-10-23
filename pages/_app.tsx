@@ -29,16 +29,6 @@ const GlobalStyles = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
-  
-  @media (prefers-color-scheme: dark) {
-    html {
-      color-scheme: dark;
-    }
-    body {
-      color: rgba(0,0,0,0.75);
-      background: white;
-    }
-  }
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
