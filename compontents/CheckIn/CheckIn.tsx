@@ -23,7 +23,7 @@ export const CheckIn = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfQOre1e1r1mC1-j9KnVz0E2Gddh-b4F26-QfBekq-Kd2-MGA/viewform"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc_b9etQ4-0d1smaM8Us_4HENnWj7mBTY_fIlg3ULk_Uti1YQ/viewform?usp=sf_link"
         >
           Rellenar formulario
         </a>
