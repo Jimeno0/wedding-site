@@ -11,7 +11,7 @@ export const CheckIn = () => {
       <Cheese alt="" src="/cheese.png" />
 
       <Text size="1rem" styles={descriptionStyles}>
-        Nos ayudas a organizarnos? En el siguiente formulario encontrarás todos los detalles.
+        ¿Nos ayudas a organizarnos? En el siguiente formulario encontrarás todos los detalles.
       </Text>
       <div
         style={{
