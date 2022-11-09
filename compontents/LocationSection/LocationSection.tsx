@@ -3,6 +3,8 @@ import {
   SideText,
   BottomText,
   LinkWrapper,
+  Lights,
+  Candle,
 } from './LocationSection.styled';
 
 export const LocationSection = () => {
@@ -10,8 +12,15 @@ export const LocationSection = () => {
     <LocationSectionWrapper>
       <picture>
         <source srcSet="/finca.jpeg" type="image/webp" />
-        <img src="/finca.jpeg" alt="fachada finca el gasto" width={'100%'} />
+        <img
+          style={{ opacity: 0.9 }}
+          src="/finca.jpeg"
+          alt="fachada finca el gasto"
+          width={'100%'}
+        />
       </picture>
+      <Lights alt="" src="/lights.png" />
+      <Candle alt="" src="/candle.png" />
       <SideText size="1.3rem" uppercase>
         Finca El gasco
       </SideText>

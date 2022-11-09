@@ -1,5 +1,5 @@
 import { useCountDown } from './CountDown.hooks';
-import { CountDownWrapper, CounterWrapper, DigitWrapper } from './CountDown.styled';
+import { CountDownWrapper, CounterWrapper, DigitWrapper, Bilma } from './CountDown.styled';
 import { Text } from '../Text';
 
 export const CountDown = () => {
@@ -49,6 +49,7 @@ export const CountDown = () => {
       >
         Añadir al calendario
       </a>
+      <Bilma alt="" src="/bilma.png" />
     </CountDownWrapper>
   );
 };

@@ -1,4 +1,4 @@
-import { CheckInWrapper } from './CheckIn.styled';
+import { CheckInWrapper, Cheese, descriptionStyles } from './CheckIn.styled';
 import { Text } from '../Text';
 
 export const CheckIn = () => {
@@ -6,10 +6,11 @@ export const CheckIn = () => {
     <CheckInWrapper>
       <picture>
         <source srcSet="/bilma.jpg" type="image/webp" />
-        <img src="/bilma.jpg" alt="fachada finca el gasto" />
+        <img style={{ width: '80%' }} src="/bilma.jpg" alt="fachada finca el gasto" />
       </picture>
+      <Cheese alt="" src="/cheese.png" />
 
-      <Text as="h3" size="1rem">
+      <Text size="1rem" styles={descriptionStyles}>
         Nos ayudas a organizarnos? En el siguiente formulario encontrarás todos los detalles.
       </Text>
       <div

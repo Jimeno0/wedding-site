@@ -31,3 +31,17 @@ export const BottomText = styled(Text)`
   padding-bottom: 100px;
   opacity: 1;
 `;
+
+export const Lights = styled.img`
+  position: absolute;
+  top: -55px;
+  right: 37px;
+  width: 90%;
+`;
+
+export const Candle = styled.img`
+  position: absolute;
+  bottom: 86px;
+  right: 11px;
+  height: 210px;
+`;
