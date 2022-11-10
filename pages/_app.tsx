@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app';
 import { createGlobalStyle } from 'styled-components';
+import { Analytics } from '@vercel/analytics/react';
 import Head from 'next/head';
 
 const WEDDING_URL = 'https://www.perez-alejano.com/';
@@ -50,6 +51,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
