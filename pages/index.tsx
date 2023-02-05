@@ -4,6 +4,8 @@ import { SecondSection } from '../compontents/SecondSection';
 import { CountDown } from '../compontents/CountDown';
 import { LocationSection } from '../compontents/LocationSection';
 import { CheckIn } from '../compontents/CheckIn';
+import { HotelSection } from '../compontents/HotelSection';
+import { CC } from '../compontents/CC';
 
 export default function Home() {
   const [isClientSite, setIsClientSite] = useState(false);
@@ -28,6 +30,8 @@ export default function Home() {
       <CountDown />
       <LocationSection />
       <CheckIn />
+      <HotelSection />
+      <CC />
     </div>
   );
 }

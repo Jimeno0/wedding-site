@@ -29,17 +29,6 @@ export const CheckIn = () => {
           Rellenar formulario
         </a>
       </div>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          width: '100%',
-          paddingTop: 30,
-        }}
-      >
-        <Text>CC: ES6400495124642116438485</Text>
-      </div>
     </CheckInWrapper>
   );
 };
