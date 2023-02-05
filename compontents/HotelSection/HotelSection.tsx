@@ -17,7 +17,7 @@ export const HotelSection = () => {
       </SideText>
       <SpacedText size="1em">
         Para aquellos que queráis alojamiento, os dejamos los detalles del hotel Pax Torrelodones,
-        donde harán parada los autobuses. autobues.
+        donde harán parada los autobuses.
       </SpacedText>
       <SpacedText size="1em">
         Indicando que sois invitados del enlace de Marta y Carlos os ofrecen una tarifa especial.
