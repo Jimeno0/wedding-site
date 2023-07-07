@@ -1,12 +1,13 @@
 import styled, { css } from 'styled-components';
+import { Text } from '../Text';
 
 export const CheckInWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 60px;
+  padding-top: 50px;
+  padding-bottom: 70px;
   position: relative;
   a {
     color: black;
@@ -23,9 +24,8 @@ export const CheckInWrapper = styled.section`
 `;
 
 export const descriptionStyles = css`
-  margin-bottom: 10px;
   width: 80%;
-  margin-top: 15px;
+  margin-top: 5px;
 `;
 
 export const Cheese = styled.img`
@@ -33,4 +33,14 @@ export const Cheese = styled.img`
   top: 0px;
   left: 5%;
   height: 118px;
+`;
+
+export const SideText = styled(Text)`
+  position: absolute;
+  top: 49px;
+  left: 68px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) translateX(0px);
+  opacity: 1;
+  transition: ease-in-out all 0.5s 0.2s;
 `;

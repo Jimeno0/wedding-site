@@ -60,7 +60,7 @@ export const FirstSection = () => {
           <ArrowDown />
           <BottomRightWrapper>
             <Text uppercase color="black">
-              Madrid 19.00 H
+              Madrid 18.30 H
             </Text>
             <Text uppercase color="black">
               Finca el Gasco

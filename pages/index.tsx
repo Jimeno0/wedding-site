@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { FirstSection } from '../compontents/FirstSection';
 import { SecondSection } from '../compontents/SecondSection';
 import { CountDown } from '../compontents/CountDown';
+import { Bus } from '../compontents/Bus';
 import { LocationSection } from '../compontents/LocationSection';
 import { CheckIn } from '../compontents/CheckIn';
 import { HotelSection } from '../compontents/HotelSection';
@@ -29,8 +30,9 @@ export default function Home() {
       <SecondSection />
       <CountDown />
       <LocationSection />
-      <CheckIn />
+      <Bus/>
       <HotelSection />
+      <CheckIn />
       <CC />
     </div>
   );
