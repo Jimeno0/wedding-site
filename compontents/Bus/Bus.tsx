@@ -19,7 +19,7 @@ export const Bus = () => {
       <Text size="1rem" styles={descriptionStyles}>
         {`- Hotel PAX Torrelodones:     18:15h`}
       </Text>
-      <Text size="1rem" style={{ width: '80%', marginTop: 15 }}>
+      <Text bold size="1rem" style={{ width: '80%', marginTop: 15 }}>
         VUELTA:
       </Text>
       <Text size="1rem" styles={descriptionStyles}>
